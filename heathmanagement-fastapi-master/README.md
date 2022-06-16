@@ -1,0 +1,51 @@
+
+# fastapi-example
+
+![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
+![FastAPI](https://img.shields.io/badge/FastAPI-005571?style=for-the-badge&logo=fastapi)
+![Swagger](https://img.shields.io/badge/-Swagger-%23Clojure?style=for-the-badge&logo=swagger&logoColor=white)
+![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg?style=for-the-badge)
+
+## Description
+
+_Health management using FastAPI framework in Python 3_
+
+This project contains five Entities - Doctors, Admins, Patients, Nurse and Records whose relationships have been exploited to create CRUD endpoint in REST under OpenAPI standard.
+
+## Installation
+
+- Create and activate a Virtual Environment for Python 3 in your workspace:
+
+  ```sh
+  $ python3 -m venv env
+  $ source venv/bin/activate
+  ```
+
+- Install all the project dependency using Pip:
+
+  ```sh
+  $ pip install -r requirements.txt
+  ```
+
+- Run the application from command prompt:
+  ```sh
+  $ uvicorn main:app --reload
+  ```
+- Open `localhost:8000/docs` for API Documentation
+
+## Testing
+
+For Testing, `fastapi.testclient` module is used for Test Suite and Assertion, whereas `pytest` is being used for Test Runner and Coverage Reporter.
+
+- Run the following command to initiate test:
+  ```sh
+  $ pytest
+  ```
+- To include Coverage Reporting as well:
+  ```sh
+  $ pytest --cov-report xml --cov .
+  ```
+
+## License
+
+&copy; MIT License
